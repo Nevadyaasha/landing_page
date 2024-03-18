@@ -22,6 +22,7 @@
     font-weight: 500;
     margin-top: 9px;
     margin-bottom: 9px;
+    text-decoration: none;
 }
 
 .link__arrow {
@@ -670,4 +671,8 @@ body {
 .footer__logo {
     width: 20px;
     height: 20px;
+}
+
+.list__item .link {
+color:#36485C;
 }
