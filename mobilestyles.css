@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 .description {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #36485C;
 }
 
 
 .button {
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
     padding-top: 16px;
@@ -16,7 +16,7 @@
 }
 
 .link {
-    font-size: 16px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -29,7 +29,7 @@
 }
 
 .pretitle {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-align: start;
     margin-bottom: 12px;
@@ -121,7 +121,7 @@ body {
 }
 
 .hero__trusted {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 20px;
@@ -184,7 +184,7 @@ body {
 
 .list__item {
     color: #36485C;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -289,7 +289,7 @@ body {
 
 .scenarios__decision {
     color: #36485C;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -444,19 +444,19 @@ body {
     color: #172026;
     font-weight: 500;
     text-align: start;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .faq-accordion__question::after {
     content: url(images/plus.svg);
 }
 
-.faq-accordion[open] .accordion__question::after {
+.faq-accordion[open] .faq-accordion__question::after {
     content: url(images/Minus.svg);
 }
 
 .faq-accordion__answer {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #36485C;
     text-align: start;
@@ -549,7 +549,7 @@ body {
 .tariff__button {
     color: #4328EB;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1rem;
     padding: 14px 30px;
     background-color: #FFFFFF;
     box-sizing: border-box;
@@ -559,7 +559,7 @@ body {
 .cta {
     background-image: url(images/gradient2.png);
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 150%;
     border-radius: 16px;
     margin: 0 16px 80px 16px;
     padding: 56px 32px;
@@ -623,20 +623,20 @@ body {
     color: #36485C;
     font-weight: 500;
     text-align: start;
-    font-size: 16px;
+    font-size: 1rem;
     justify-content: space-between;
 }
 
 .nav-accordion__list {
     color: #36485C;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 
 }
 
 .nav-accordion__list-item {
     color: #36485C;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 32px;
 }
@@ -646,7 +646,7 @@ body {
 }
 
 .nav-accordion[open] .nav-accordion__label::after {
-    content: url(images/chevron_up.svg);
+    transform: rotate(180deg);
 }
 
 .footer {
