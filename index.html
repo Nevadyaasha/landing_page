@@ -10,16 +10,57 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="https://nevadyaasha.github.io/landing_page/">
+    <a class="page-header__logo" href="#">
       <img src="images/logo_your_site.svg" alt="logo">
     </a>
-    <a class="page-header__avatar" href="https://nevadyaasha.github.io/landing_page/">
+    <a class="page-header__avatar" href="#">
       <img src="images/icon_user.svg" alt="avatar">
     </a>
-    <button class="page-header__menu burger-menu">
+    <label class="page-header__menu burger-menu" for="menuid">
       <img class="burger-menu__icon" src="images/icon_burger.svg" alt="burger menu">
-    </button>
+    </label>
+    <input type="checkbox" id="menuid">
+    <div class="menu">
+      <aside class="menu__content">
+        <div class="menu__icons">
+          <a class="menu__logo" href="#">
+            <img src="images/logo_your_site.svg" alt="logo">
+          </a>
+          <label class="menu__close" for="menuid">
+            <img src="images/icon_close.svg" alt="close menu">
+          </label>
+        </div>
+        <nav class="menu__navigation">
+          <a class="menu__link link" href="#">Open an Account</a>
+          <a class="menu__link link" href="#">Features</a>
+          <a class="menu__link link" href="#">Pricing</a>
+          <a class="menu__link link" href="#">Enterprise</a>
+          <a class="menu__link link" href="#">Careers</a>
+        </nav>
+      </aside>
+    </div>
   </header>
+
+  <div class="menu">
+    <aside class="menu__content">
+      <div class="menu__icons">
+        <a class="menu__logo" href="#">
+          <img src="images/logo_your_site.svg" alt="logo">
+        </a>
+        <label class="menu__close button" for="1234">
+          <img src="images/icon_close.svg" alt="close menu">
+        </label>
+      </div>
+
+      <nav class="menu__navigation">
+        <a class="menu__link link" href="#">Open an Account</a>
+        <a class="menu__link link" href="#">Features</a>
+        <a class="menu__link link" href="#">Pricing</a>
+        <a class="menu__link link" href="#">Enterprise</a>
+        <a class="menu__link link" href="#">Careers</a>
+      </nav>
+    </aside>
+  </div>
 
   <section class="hero">
     <h1 class="hero__title">Start monitoring your<br>website like a pro</h1>
@@ -27,7 +68,7 @@
       things! Revamp your work process with our
       game-changing feature. Boost productivity and efficiency!</p>
     <div class="hero__actions"> <button class="hero__go-trial button button_violet">Try for free</button>
-      <a href="https://nevadyaasha.github.io/landing_page/" class="hero__view-price link">View Pricing
+      <a href="#" class="hero__view-price link">View Pricing
         <img class="link__arrow" src="images/arrow_violet.svg" alt="violet arrow">
       </a>
     </div>
@@ -53,7 +94,7 @@
       <li class="sales-monitoring__advantage list__item">Consectetur adipiscing elit</li>
       <li class="sales-monitoring__advantage list__item">Sed do eiusmod tempor incididunt ut labore </li>
     </ul>
-    <a href="https://nevadyaasha.github.io/landing_page/" class="link sales-monitoring__learn-more">Learn more<img class="link__arrow" src="images/arrow_blue.svg"
+    <a href="#" class="link sales-monitoring__learn-more">Learn more<img class="link__arrow" src="images/arrow_blue.svg"
         alt="blue arrow"></a>
   </section>
   <section class="feature customer-support">
@@ -68,8 +109,8 @@
       <li class="customer-support__advantage list__item">Consectetur adipiscing elit</li>
       <li class="customer-support__advantage list__item">Sed do eiusmod tempor incididunt ut labore </li>
     </ul>
-    <a href="https://nevadyaasha.github.io/landing_page/" class="link customer-support__learn-more">Learn more<img class="link__arrow" src="images/arrow_green.svg"
-        alt="green arrow"></a>
+    <a href="#" class="link customer-support__learn-more">Learn more<img class="link__arrow"
+        src="images/arrow_green.svg" alt="green arrow"></a>
   </section>
   <section class="feature growth-monitoring">
     <p class="growth-monitoring__pretitle pretitle">Growth Monitoring</p>
@@ -83,8 +124,8 @@
       <span class="scenarios__decision">Lorem ipsum dolor sit</span>
       <span class="scenarios__decision">Conse adipiscing elit</span>
     </div>
-    <a href="https://nevadyaasha.github.io/landing_page/" class="link growth-monitoring__learn-more"> Learn More<img class="link__arrow" src="images/arrow_pink.svg"
-        alt="pink arrow"></a>
+    <a href="#" class="link growth-monitoring__learn-more"> Learn More<img class="link__arrow"
+        src="images/arrow_pink.svg" alt="pink arrow"></a>
   </section>
   <section class="testimonials">
     <h1 class="testimonials__title">Testimonials</h1>
@@ -293,7 +334,7 @@
     <h1 class="cta__title">Monitor your website like a pro</h1>
     <p class="cta__description description">Join over 800+ happy site owners boosting productivity and efficiency!</p>
     <button class="cta__go-trial button">Try for free</button>
-    <a href="https://nevadyaasha.github.io/landing_page/" href="https://nevadyaasha.github.io/landing_page/"class="cta__contact link">Contact Sales
+    <a href="#" href="#" class="cta__contact link">Contact Sales
       <img class="link__arrow arrow_bright_pink" src="images/arrow_bright_pink.svg" alt="pink arrow">
     </a>
   </section>
@@ -305,35 +346,35 @@
     <details class="footer-navigation__accordion nav-accordion">
       <summary class="nav-accordion__label">Features</summary>
       <ul class="nav-accordion__list list">
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/">Growth</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/">Sales</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/">Chat</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#">Growth</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#">Sales</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#">Chat</a></li>
       </ul>
     </details>
     <details class="nav-accordion">
       <summary class="nav-accordion__label">Pricing</summary>
       <ul class="nav-accordion__list list">
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Free Trial</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Standard</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Business</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Free Trial</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Standard</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Business</a></li>
       </ul>
     </details>
     <details class="nav-accordion">
       <summary class="nav-accordion__label">Enterprise</summary>
       <ul class="nav-accordion__list list">
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Personalize</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Automation</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Invoicing</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">24/7 Support</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Personalize</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Automation</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Invoicing</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">24/7 Support</a></li>
       </ul>
     </details>
     <details class="nav-accordion">
       <summary class="nav-accordion__label">Careers</summary>
       <ul class="nav-accordion__list list">
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Open Positions</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Part-Time</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Contractual</a></li>
-        <li class="nav-accordion__list-item list_item"><a href="https://nevadyaasha.github.io/landing_page/" class="link">Contact Us</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Open Positions</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Part-Time</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Contractual</a></li>
+        <li class="nav-accordion__list-item list_item"><a href="#" class="link">Contact Us</a></li>
       </ul>
     </details>
   </section>

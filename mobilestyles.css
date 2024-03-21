@@ -73,6 +73,51 @@ body {
     height: 24px;
 }
 
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1720266b;
+    z-index: 1;
+}
+
+#menuid {
+    display: none;
+}
+
+#menuid:checked ~ .menu {
+    display: block;
+}
+.menu__content { 
+    padding: 16px 20px 38px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+.menu__icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.menu__logo {}
+.menu__close {
+    background: transparent;
+}
+.menu__navigation {
+
+}
+.menu__link {
+   color: #36485C;
+   margin-bottom: 16px;
+}
+
+.menu__link:nth-child(1) {
+    margin-bottom: 32px;
+}
+
 .hero {
     padding-left: 20px;
     padding-right: 20px;
