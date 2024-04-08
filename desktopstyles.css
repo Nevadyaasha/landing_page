@@ -1,0 +1,202 @@
+@media (max-width: 350px) {
+    .button_violet {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (min-width: 500px) {
+    .hero__screenshot {
+        right: 5%;
+    }
+}
+
+@media (min-width: 768px) {
+    .burger-menu {
+        display: none;
+    }
+
+    .page-header__link {
+        display: inline;
+        margin-right: 20px;
+    }
+
+
+    .page-header__avatar-icon {
+        height: 26px;
+        width: 26px;
+    }
+
+    .page-header__avatar {
+        height: 26px;
+        width: 26px;
+    }
+
+    .page-header__link:nth-child(5) {
+        margin-left: auto;
+    }
+
+    .page-header__navigation {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+    }
+
+    .page-header__logo {
+        margin-right: 40px;
+    }
+
+    .hero__actions {
+        margin-bottom: 60px;
+    }
+
+    .feature {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            max-height: 500px;
+            column-gap: 24px;
+            margin-left: 6%;
+    }
+    .sales-monitoring__screenshot,
+    .customer-support__screenshot,
+    .growth-monitoring__screenshot {
+        max-width: 43.6%;
+    }
+
+    .sales-monitoring__screenshot,
+    .growth-monitoring__screenshot {
+        order: 1;
+        margin-bottom: 160px;
+    }
+
+    .customer-support__screenshot {
+        order: -1;
+        margin-bottom: 160px;
+    }
+
+    .sales-monitoring__pretitle,
+    .sales-monitoring__title,
+    .sales-monitoring__description,
+    .sales-monitoring__advantages,
+    .sales-monitoring__learn-more,
+    .customer-support__pretitle,
+    .customer-support__title,
+    .customer-support__description,
+    .customer-support__advantages,
+    .customer-support__learn-more,
+    .growth-monitoring__pretitle,
+    .growth-monitoring__title,
+    .growth-monitoring__description,
+    .growth-monitoring__scenarios,
+    .growth-monitoring__learn-more
+     {
+        max-width: 43.6%;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .page-header {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+
+    .page-header__logo {
+        margin-right: 74px;
+    }
+
+    .hero__title,
+    .hero__description {
+        max-width: 846px;
+    }
+
+    .hero__title {
+        font-size: 64px;
+        font-weight: 600;
+    }
+
+    .button_violet,
+    .link__arrow,
+    .cta__go-trial,
+    .cta__contact {
+        font-size: 18px;
+    }
+
+    .hero__actions {
+        gap: 40px;
+    }
+
+    .hero__trusted {
+        display: flex;
+        gap: 72px;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .hero__trusted-description {
+        margin-bottom: 0;
+    }
+
+    .customer-support__screenshot {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero__screenshot {
+       right: 6%;
+    }
+
+    .page-header__link {
+        display: inline;
+        margin-right: 56px;
+    }
+
+    .feature {
+        max-height: 630px;
+        margin-left: 80px;
+}
+.sales-monitoring__pretitle,
+.customer-support__pretitle,
+.growth-monitoring__pretitle {
+ font-size: 18px;
+ margin-top: 56px;
+ margin-bottom: 16px;
+}
+.sales-monitoring__title,
+.customer-support__title,
+.growth-monitoring__title {
+font-size: 42px;
+margin-bottom: 16px;
+}
+.sales-monitoring__description,
+.customer-support__description,
+.growth-monitoring__description {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+.sales-monitoring__advantages,
+.customer-support__advantages {
+    margin-bottom: 32px;
+}
+.sales-monitoring__learn-more,
+.customer-support__learn-more,
+.growth-monitoring__learn-more {
+    font-size: 18px;
+}
+.growth-monitoring__scenarios {
+    margin-bottom: 32px;
+
+}
+.scenarios__condition {
+    font-size: 32px;
+}
+.scenarios__decision {
+    font-size: 18px;
+}
+.link__arrow {
+    width: 28px;
+    height: 28px;
+}
+}

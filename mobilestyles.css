@@ -45,14 +45,24 @@ body {
 .page-header {
     margin: 16px 20px;
     display: flex;
+    flex-grow: 1;
     align-items: center;
 }
-
 
 .page-header__logo {
     margin-right: auto;
     height: 40px;
     width: 40px;
+    margin-right: ;
+}
+
+.page-header__navigation {}
+
+.page-header__link {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #36485C;
 }
 
 .page-header__avatar {
@@ -88,30 +98,34 @@ body {
     display: none;
 }
 
-#menuid:checked ~ .menu {
+#menuid:checked~.menu {
     display: block;
 }
-.menu__content { 
+
+.menu__content {
     padding: 16px 20px 38px 20px;
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
 }
+
 .menu__icons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
 }
+
 .menu__logo {}
+
 .menu__close {
     background: transparent;
 }
-.menu__navigation {
 
-}
+.menu__navigation {}
+
 .menu__link {
-   color: #36485C;
-   margin-bottom: 16px;
+    color: #36485C;
+    margin-bottom: 16px;
 }
 
 .menu__link:nth-child(1) {
@@ -125,8 +139,11 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 32.5px;
-    background-size: 100% 67%;
+    background-size: 100% 60%;
     margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero__title {
@@ -146,6 +163,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 24px;
+    margin-bottom: 24px;
 }
 
 .button_violet {
@@ -161,12 +179,16 @@ body {
 
 .hero__screenshot {
     position: relative;
-    right: 12px;
-    top: 8px;
+    right: 3%;
+}
+
+.hero__screenshot_default {
     width: 100%;
 }
 
-.hero__trusted {
+.hero__trusted {}
+
+.hero__trusted-description {
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
@@ -206,9 +228,12 @@ body {
 }
 
 .sales-monitoring__screenshot {
-    width: 100%;
-    margin-top: 0;
     margin-bottom: 24px;
+    display: block;
+}
+
+.sales-monitoring__screenshot-default {
+    width: 100%;
 }
 
 .sales-monitoring__description {
@@ -266,11 +291,12 @@ body {
 }
 
 .customer-support__screenshot {
-    width: 100%;
-    margin-top: 0;
+    display: block;
     margin-bottom: 24px;
 }
-
+.customer-support__screenshot-default {
+    width: 100%;
+}
 .customer-support__description {
     text-align: start;
     margin-top: 0;
@@ -294,7 +320,7 @@ body {
     color: #EB2891;
 }
 
-.growth-monitoring__tittle {
+.growth-monitoring__title {
     font-size: 24px;
     color: #172026;
     font-weight: 500;
@@ -304,9 +330,11 @@ body {
 }
 
 .growth-monitoring__screenshot {
-    width: 100%;
-    margin-top: 0;
+    display: block;
     margin-bottom: 24px;
+}
+.growth-monitoring__screenshot-default {
+    width: 100%;
 }
 
 .growth-monitoring__description {
@@ -719,5 +747,5 @@ body {
 }
 
 .list__item .link {
-color:#36485C;
+    color: #36485C;
 }

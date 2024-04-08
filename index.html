@@ -6,16 +6,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="mobilestyles.css">
+  <link rel="stylesheet" href="desktopstyles.css">
 </head>
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <img src="images/logo_your_site.svg" alt="logo">
-    </a>
-    <a class="page-header__avatar" href="#">
-      <img src="images/icon_user.svg" alt="avatar">
-    </a>
+    <a class="page-header__logo" href="#"><img src="images/logo_your_site.svg" alt="logo"></a>
+    <nav class="page-header__navigation">
+      <a class="page-header__link link" href="#">Features</a>
+      <a class="page-header__link link" href="#">Pricing</a>
+      <a class="page-header__link link" href="#">Enterprise</a>
+      <a class="page-header__link link" href="#">Careers</a>
+      <a class="page-header__link link" href="#">Open an Account</a>
+      <a class="page-header__avatar" href="#"><img class="page-header__avatar-icon" src="images/icon_user.svg"
+          alt="avatar"></a>
+      <a class="page-header__link link" href="#">Sign In</a>
+    </nav>
     <label class="page-header__menu burger-menu" for="menuid">
       <img class="burger-menu__icon" src="images/icon_burger.svg" alt="burger menu">
     </label>
@@ -72,20 +78,31 @@
         <img class="link__arrow" src="images/arrow_violet.svg" alt="violet arrow">
       </a>
     </div>
-    <img class="hero__screenshot" src="images/screenshot_web_mobile.png" alt="screenshots">
-    <p class="hero__trusted">Trusted by these companies</p>
-    <div class="hero__companies">
-      <img class="hero__company" src="images/logo_google.svg" alt="google">
-      <img class="hero__company" src="images/logo_slack.svg" alt="slack">
-      <img class="hero__company" src="images/logo_trustpilot.svg" alt="trustpilot">
-      <img class="hero__company" src="images/logo_cnn.svg" alt="cnn">
-      <img class="hero__company" src="images/logo_clutch.svg" alt="clutech">
+    <picture class="hero__screenshot">
+      <source media="(min-width: 500px)"
+        srcset="images/screenshot_wm_desktop.png, images/screenshot_wm_desktop_2x.png 2x">
+      <img class="hero__screenshot_default"
+        srcset="images/screenshot_wm_mobile.png, images/screenshot_wm_mobile_2x.png 2x" alt="screenshots">
+    </picture>
+
+    <div class="hero__trusted">
+      <p class="hero__trusted-description">Trusted by these companies</p>
+      <div class="hero__companies">
+        <img class="hero__company" src="images/logo_google.svg" alt="google">
+        <img class="hero__company" src="images/logo_slack.svg" alt="slack">
+        <img class="hero__company" src="images/logo_trustpilot.svg" alt="trustpilot">
+        <img class="hero__company" src="images/logo_cnn.svg" alt="cnn">
+        <img class="hero__company" src="images/logo_clutch.svg" alt="clutech">
+      </div>
     </div>
   </section>
   <section class="feature sales-monitoring">
     <p class="sales-monitoring__pretitle pretitle">Sales monitoring</p>
     <h1 class="sales-monitoring__title">Simplify your sales monitoring</h1>
-    <img class="sales-monitoring__screenshot" src="images/sales_monitoring.png" alt="sales monitoring example">
+    <picture class="sales-monitoring__screenshot">
+      <source media="(min-width: 768px)" srcset="images/sales_monitoring_d.png, images/sales_monitoring_d_2x.png 2x">
+      <img class="sales-monitoring__screenshot-default" srcset="images/sales_monitoring_m.png, images/sales_monitoring_m_2x.png 2x" alt="sales monitoring example">
+    </picture>
     <p class="sales-monitoring__description description">Stay on top of things and revamp your work process with our
       game-changing feature. Get a bird's eye view with our
       customizable dashboard. </p>
@@ -100,7 +117,10 @@
   <section class="feature customer-support">
     <p class="customer-support__pretitle pretitle">Customer Support</p>
     <h1 class="customer-support__title">Get in touch with your customers</h1>
-    <img class="customer-support__screenshot" src="images/customer_support.png" alt="customer support example">
+    <picture class="customer-support__screenshot">
+      <source media="(min-width: 768px)" srcset="images/customer_support_d.png, images/customer_support_d_2x.png 2x">
+      <img class="customer-support__screenshot-default" srcset="images/customer_support_m.png, images/customer_support_m_2x.png 2x" alt="customer-support example">
+    </picture>
     <p class="customer-support__description description">Stay on top of things and revamp your work process with our
       game-changing feature. Get a bird's eye view with our
       customizable dashboard. </p>
@@ -114,8 +134,11 @@
   </section>
   <section class="feature growth-monitoring">
     <p class="growth-monitoring__pretitle pretitle">Growth Monitoring</p>
-    <h1 class="growth-monitoring__tittle">Monitor your site’s new subscribers </h1>
-    <img class="growth-monitoring__screenshot" src="images/growth_monitoring.png" alt="growth monitoring example">
+    <h1 class="growth-monitoring__title">Monitor your site’s new subscribers </h1>
+    <picture class="growth-monitoring__screenshot">
+      <source media="(min-width: 768px)" srcset="images/growth_monitoring_d.png, images/growth_monitoring_d_2x.png 2x">
+      <img class="growth-monitoring__screenshot-default" srcset="images/growth_monitoring_m.png, images/growth_monitoring_m_2x.png 2x" alt="growth monitoring example">
+    </picture>
     <p class="growth-monitoring__description description">Stay on top of things and revamp your work process with our
       game-changing feature. Get a bird's eye view with our customizable dashboard. </p>
     <div class="growth-monitoring__scenarios scenarios">
