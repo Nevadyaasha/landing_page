@@ -51,13 +51,14 @@
     }
 
     .feature {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            max-height: 500px;
-            column-gap: 24px;
-            margin-left: 6%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 500px;
+        column-gap: 24px;
+        margin-left: 6%;
     }
+
     .sales-monitoring__screenshot,
     .customer-support__screenshot,
     .growth-monitoring__screenshot {
@@ -89,14 +90,94 @@
     .growth-monitoring__title,
     .growth-monitoring__description,
     .growth-monitoring__scenarios,
-    .growth-monitoring__learn-more
-     {
+    .growth-monitoring__learn-more {
         max-width: 43.6%;
+    }
+
+    .testimonials__description {
+        max-width: 680px;
+        margin: 0 auto 72px auto;
+    }
+
+    .cta {
+        background-image: url(images/gradient_cta_desktop.png);
+        background-repeat: no-repeat;
+        background-size: 150%;
+        border-radius: 16px;
+        margin: 0 16px 80px 16px;
+        padding: 56px 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta_actions {
+        display: flex;
+        gap: 40px;
+    }
+
+    .cta__go-trial {
+        margin-bottom: 0px;
+    }
+
+    .footer-navigation__links_mobile {
+        display: none;
+    }
+
+    .footer-navigation__links_desktop {
+        display: flex;
+    }
+
+    .footer-navigation {
+        margin: 0 5.5% 104px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-navigation__site-info {
+        margin-right: auto;
+    }
+
+
+    .links__list-item .link {
+        margin-top: 0;
+        color: #36485C;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .links__list-item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    .links__list-item:first-child .link {
+        font-weight: 400;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 5.5% 56px 5.5%;
+    }
+
+    .footer__copyright {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
 }
 
 @media (min-width: 1024px) {
+
+    .title {
+        font-size: 32px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
+
     .page-header {
         margin-left: 80px;
         margin-right: 80px;
@@ -125,6 +206,7 @@
 
     .hero__actions {
         gap: 40px;
+        margin-bottom: 88px;
     }
 
     .hero__trusted {
@@ -140,12 +222,99 @@
 
     .customer-support__screenshot {
         margin-bottom: 60px;
+
     }
+
+    .testimonials {
+        margin-bottom: 160px;
+        padding-bottom: 104px;
+    }
+
+    .testimonials__examples {
+        height: revert;
+    }
+
+    .faq {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        margin: 0 5.5% 11% 5.5%
+    }
+
+    .faq__examples {
+        max-width: 51.2%;
+    }
+
+    .pricing__description {
+        margin-bottom: 64px;
+    }
+
+    .pricing {
+        margin: 0 5.5% 120px 5.5%;
+    }
+
+    .tariffs {
+        display: flex;
+        gap: 24px;
+        justify-content: center;
+    }
+
+    .tariff {
+        width: 28.5%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tariff__title {
+        font-size: 20px;
+    }
+
+    .tariff__description {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .tariff__price {
+        margin-bottom: 32px;
+    }
+
+    .tariff__summ,
+    .tariff__period {
+        font-size: 32px;
+    }
+
+    .tariff__button {
+        margin-top: auto;
+    }
+
+    .cta {
+        margin: 0 5.5% 120px 5.5%;
+    }
+
+    .cta__title {
+        font-size: 56px;
+        max-width: 628px;
+        margin: 0 auto 48px auto;
+    }
+
+    .cta__description {
+        font-size: 18px;
+        margin: 0 auto 56px auto;
+        max-width: 628px;
+    }
+
+
 }
 
+
 @media (min-width: 1440px) {
+
+    .title {
+        font-size: 42px;
+    }
+
     .hero__screenshot {
-       right: 6%;
+        right: 6%;
     }
 
     .page-header__link {
@@ -156,47 +325,104 @@
     .feature {
         max-height: 630px;
         margin-left: 80px;
-}
-.sales-monitoring__pretitle,
-.customer-support__pretitle,
-.growth-monitoring__pretitle {
- font-size: 18px;
- margin-top: 56px;
- margin-bottom: 16px;
-}
-.sales-monitoring__title,
-.customer-support__title,
-.growth-monitoring__title {
-font-size: 42px;
-margin-bottom: 16px;
-}
-.sales-monitoring__description,
-.customer-support__description,
-.growth-monitoring__description {
-    font-size: 18px;
-    margin-bottom: 32px;
-}
-.sales-monitoring__advantages,
-.customer-support__advantages {
-    margin-bottom: 32px;
-}
-.sales-monitoring__learn-more,
-.customer-support__learn-more,
-.growth-monitoring__learn-more {
-    font-size: 18px;
-}
-.growth-monitoring__scenarios {
-    margin-bottom: 32px;
+    }
 
-}
-.scenarios__condition {
-    font-size: 32px;
-}
-.scenarios__decision {
-    font-size: 18px;
-}
-.link__arrow {
-    width: 28px;
-    height: 28px;
-}
+    .feature .growth-monitoring {
+        margin-bottom: 120px;
+    }
+
+    .sales-monitoring__pretitle,
+    .customer-support__pretitle,
+    .growth-monitoring__pretitle {
+        font-size: 18px;
+        margin-top: 56px;
+        margin-bottom: 16px;
+    }
+
+    .sales-monitoring__title,
+    .customer-support__title,
+    .growth-monitoring__title {
+        font-size: 42px;
+        margin-bottom: 16px;
+    }
+
+    .sales-monitoring__description,
+    .customer-support__description,
+    .growth-monitoring__description {
+        font-size: 18px;
+        margin-bottom: 32px;
+    }
+
+    .sales-monitoring__advantages,
+    .customer-support__advantages {
+        margin-bottom: 32px;
+    }
+
+    .sales-monitoring__learn-more,
+    .customer-support__learn-more,
+    .growth-monitoring__learn-more {
+        font-size: 18px;
+    }
+
+    .growth-monitoring__scenarios {
+        margin-bottom: 32px;
+
+    }
+
+    .scenarios__condition {
+        font-size: 32px;
+    }
+
+    .scenarios__decision {
+        font-size: 18px;
+    }
+
+    .link__arrow {
+        width: 28px;
+        height: 28px;
+    }
+
+    .testimonials__examples {
+        width: 1820px;
+    }
+
+    .testimonials__example {
+        width: 519px;
+        padding: 24px;
+    }
+
+    .review__avatar {
+        width: 64px;
+        margin-right: 16px;
+    }
+
+    .review__name {
+        font-size: 16px;
+    }
+
+    .review__job-title {
+        font-size: 16px;
+    }
+
+    .review__source {
+        width: 48px;
+    }
+
+    .review__content {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .testimonials__title {
+        font-size: 42px;
+    }
+
+    .testimonials__description {
+        font-size: 18px;
+    }
+
+    .links__list {
+        padding: 0;
+        width: 193px;
+    }
 }

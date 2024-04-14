@@ -388,15 +388,19 @@ body {
     text-align: center;
     margin: 0 20px 32px 20px;
 }
-
+.testimonials_reviews-viewport {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 .testimonials__examples {
     width: 1200px;
     height: 372px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .testimonials__example {
@@ -406,6 +410,9 @@ body {
     padding: 16px 16px 0 16px;
 }
 
+.testimonials__example:nth-child(6n + 1) {
+    margin-inline-start: 70px;
+  }
 .review {
     display: flex;
     flex-direction: row;
@@ -458,27 +465,11 @@ body {
     -webkit-line-clamp: 3;
 }
 
-.testimonials__example:nth-child(1),
-.testimonials__example:nth-child(2),
-.testimonials__example:nth-child(3),
-.testimonials__example:nth-child(7),
-.testimonials__example:nth-child(8),
-.testimonials__example:nth-child(9) {
-    position: relative;
-    right: 310px;
-}
-
-.testimonials__example:nth-child(4),
-.testimonials__example:nth-child(5),
-.testimonials__example:nth-child(6) {
-    position: relative;
-    right: 386px;
-}
-
 .faq {
     margin: 0 20px 48px 20px;
 }
 
+.faq__info {}
 .faq__pretitle {
     color: #EB2891;
     font-size: 14px;
@@ -500,6 +491,8 @@ body {
 .faq__description {
     text-align: start;
 }
+
+.faq__examples {}
 
 .faq__example {
     padding: 16px;
@@ -523,10 +516,12 @@ body {
 
 .faq-accordion__question::after {
     content: url(images/plus.svg);
+    margin-left: auto;
 }
 
 .faq-accordion[open] .faq-accordion__question::after {
     content: url(images/Minus.svg);
+    margin-left: auto;
 }
 
 .faq-accordion__answer {
@@ -553,6 +548,10 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 48px;
+}
+
+.tariff__description-more {
+ color: #36485C;
 }
 
 .tariff {
@@ -655,6 +654,10 @@ body {
     margin-bottom: 40px;
 }
 
+.cta_actions {
+    margin: 0 auto;
+}
+
 .cta__go-trial {
     color: #EB2891;
     font-size: 18px;
@@ -688,6 +691,10 @@ body {
     color: #36485C;
 }
 
+.footer-navigation__links_desktop {
+    display: none;
+}
+
 .nav-accordion {
     margin-bottom: 32px;
 }
@@ -708,11 +715,12 @@ body {
 
 }
 
-.nav-accordion__list-item {
+.nav-accordion__list-item .link {
     color: #36485C;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 32px;
+
 }
 
 .nav-accordion__label::after {
@@ -748,4 +756,5 @@ body {
 
 .list__item .link {
     color: #36485C;
+    text-decoration: none;
 }
