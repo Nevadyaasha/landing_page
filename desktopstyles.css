@@ -240,9 +240,12 @@
         gap: 24px;
         margin: 0 5.5% 11% 5.5%
     }
+    .faq__info {
+        width: 40.5%;
+    }
 
     .faq__examples {
-        max-width: 51.2%;
+        width: 56.2%;
     }
 
     .pricing__description {
