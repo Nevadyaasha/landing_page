@@ -1,5 +1,17 @@
+.link:hover {
+    text-decoration: underline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+summary.faq-accordion__question:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 350px) {
-    .button_violet {
+    .hero__go-trial {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -119,11 +131,11 @@
         margin-bottom: 0px;
     }
 
-    .footer-navigation__links_mobile {
+    .footer-navigation__links-mobile {
         display: none;
     }
 
-    .footer-navigation__links_desktop {
+    .footer-navigation__links-desktop {
         display: flex;
     }
 
@@ -139,21 +151,25 @@
     }
 
 
-    .links__list-item .link {
+    .footer-navigation__link {
         margin-top: 0;
         color: #36485C;
         font-size: 1rem;
-        font-weight: 500;
+        font-weight: inherit;
     }
 
-    .links__list-item:not(:last-child) {
+    .footer-navigation__list-item:not(:last-child) {
         margin-bottom: 32px;
     }
 
-    .links__list-item:first-child .link {
-        font-weight: 400;
+
+    .footer-navigation__list-item {
+        font-weight: 500;
     }
 
+    .footer-navigation__list-item:first-child {
+         font-weight: 400;
+    }
     .footer {
         display: flex;
         justify-content: space-between;
@@ -197,7 +213,7 @@
         font-weight: 600;
     }
 
-    .button_violet,
+    .hero__go-trial,
     .link__arrow,
     .cta__go-trial,
     .cta__contact {
@@ -240,6 +256,7 @@
         gap: 24px;
         margin: 0 5.5% 11% 5.5%
     }
+
     .faq__info {
         width: 40.5%;
     }
@@ -330,7 +347,7 @@
         margin-left: 80px;
     }
 
-    .feature .growth-monitoring {
+    .growth-monitoring {
         margin-bottom: 120px;
     }
 
@@ -424,7 +441,7 @@
         font-size: 18px;
     }
 
-    .links__list {
+    .footer-navigation__list {
         padding: 0;
         width: 193px;
     }

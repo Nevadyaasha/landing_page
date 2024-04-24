@@ -53,7 +53,6 @@ body {
     margin-right: auto;
     height: 40px;
     width: 40px;
-    margin-right: ;
 }
 
 .page-header__navigation {}
@@ -98,7 +97,7 @@ body {
     display: none;
 }
 
-#menuid:checked~.menu {
+#menuid:checked ~ .menu {
     display: block;
 }
 
@@ -714,7 +713,7 @@ body {
 
 }
 
-.nav-accordion__list-item .link {
+.nav-accordion__link  {
     color: #36485C;
     font-size: 1rem;
     font-weight: 500;
@@ -753,7 +752,3 @@ body {
     height: 20px;
 }
 
-.list__item .link {
-    color: #36485C;
-    text-decoration: none;
-}
