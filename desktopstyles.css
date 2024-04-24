@@ -71,38 +71,22 @@ summary.faq-accordion__question:hover {
         margin-left: 6%;
     }
 
-    .sales-monitoring__screenshot,
-    .customer-support__screenshot,
-    .growth-monitoring__screenshot {
+    .feature__screenshot {
         max-width: 43.6%;
-    }
-
-    .sales-monitoring__screenshot,
-    .growth-monitoring__screenshot {
         order: 1;
         margin-bottom: 160px;
     }
 
-    .customer-support__screenshot {
+    .feature__screenshot_left {
         order: -1;
         margin-bottom: 160px;
     }
 
-    .sales-monitoring__pretitle,
-    .sales-monitoring__title,
-    .sales-monitoring__description,
-    .sales-monitoring__advantages,
-    .sales-monitoring__learn-more,
-    .customer-support__pretitle,
-    .customer-support__title,
-    .customer-support__description,
-    .customer-support__advantages,
-    .customer-support__learn-more,
-    .growth-monitoring__pretitle,
-    .growth-monitoring__title,
-    .growth-monitoring__description,
-    .growth-monitoring__scenarios,
-    .growth-monitoring__learn-more {
+    .feature__pretitle,
+    .feature__title,
+    .feature__description,
+    .feature__advantages,
+    .feature__learn-more {
         max-width: 43.6%;
     }
 
@@ -236,7 +220,7 @@ summary.faq-accordion__question:hover {
         margin-bottom: 0;
     }
 
-    .customer-support__screenshot {
+    .feature__screenshot {
         margin-bottom: 60px;
 
     }
@@ -347,44 +331,36 @@ summary.faq-accordion__question:hover {
         margin-left: 80px;
     }
 
-    .growth-monitoring {
+    .feature:nth-child(2) {
         margin-bottom: 120px;
     }
 
-    .sales-monitoring__pretitle,
-    .customer-support__pretitle,
-    .growth-monitoring__pretitle {
+    .feature__pretitle {
         font-size: 18px;
         margin-top: 56px;
         margin-bottom: 16px;
     }
 
-    .sales-monitoring__title,
-    .customer-support__title,
-    .growth-monitoring__title {
+    .feature__title {
         font-size: 42px;
         margin-bottom: 16px;
     }
 
-    .sales-monitoring__description,
-    .customer-support__description,
-    .growth-monitoring__description {
+    .feature__description {
         font-size: 18px;
         margin-bottom: 32px;
     }
 
-    .sales-monitoring__advantages,
-    .customer-support__advantages {
+
+    .feature__advantages {
         margin-bottom: 32px;
     }
 
-    .sales-monitoring__learn-more,
-    .customer-support__learn-more,
-    .growth-monitoring__learn-more {
+    .feature__learn-more {
         font-size: 18px;
     }
 
-    .growth-monitoring__scenarios {
+    .feature__scenarios {
         margin-bottom: 32px;
 
     }

@@ -209,15 +209,15 @@ body {
     margin: 0 20px;
 }
 
-.sales-monitoring {
+.feature {
     margin-bottom: 56px;
 }
 
-.sales-monitoring__pretitle {
+.feature__pretitle_blue {
     color: #0085FF;
 }
 
-.sales-monitoring__title {
+.feature__title {
     font-size: 24px;
     color: #172026;
     font-weight: 500;
@@ -226,22 +226,22 @@ body {
     margin-top: 0;
 }
 
-.sales-monitoring__screenshot {
+.feature__screenshot {
     margin-bottom: 24px;
     display: block;
 }
 
-.sales-monitoring__screenshot-default {
+.feature__screenshot-default {
     width: 100%;
 }
 
-.sales-monitoring__description {
+.feature__description {
     text-align: start;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
-.sales-monitoring__advantages {
+.feature__advantages {
     margin-top: 0;
     margin-bottom: 24px;
 }
@@ -268,85 +268,31 @@ body {
     left: 0;
 }
 
-.sales-monitoring__learn-more {
+.feature__learn-more_blue {
     color: #0085FF;
 }
 
-.customer-support {
-    margin-bottom: 56px;
-}
-
-.customer-support__pretitle {
+.feature__pretitle_green {
     color: #00A424;
 }
 
-.customer-support__title {
-    font-size: 24px;
-    color: #172026;
-    font-weight: 500;
-    text-align: start;
-    margin-bottom: 24px;
-    margin-top: 0;
-}
-
-.customer-support__screenshot {
-    display: block;
-    margin-bottom: 24px;
-}
-.customer-support__screenshot-default {
-    width: 100%;
-}
-.customer-support__description {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.customer-support__advantages {
-    margin-top: 0;
-    margin-top: 24px;
-}
-
-.customer-support__learn-more {
+.feature__learn-more_green {
     color: #00A424;
 }
 
-.growth-monitoring {
+.feature {
     margin-bottom: 56px;
 }
 
-.growth-monitoring__pretitle {
+.feature__pretitle_pink {
     color: #EB2891;
 }
 
-.growth-monitoring__title {
-    font-size: 24px;
-    color: #172026;
-    font-weight: 500;
-    text-align: start;
-    margin-bottom: 24px;
-    margin-top: 0;
-}
-
-.growth-monitoring__screenshot {
-    display: block;
-    margin-bottom: 24px;
-}
-.growth-monitoring__screenshot-default {
-    width: 100%;
-}
-
-.growth-monitoring__description {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-
-.growth-monitoring__learn-more {
+.feature__learn-more_pink {
     color: #EB2891;
 }
 
-.growth-monitoring__scenarios {
+.feature__scenarios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: start;
