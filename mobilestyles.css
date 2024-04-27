@@ -229,10 +229,13 @@ body {
 .feature__screenshot {
     margin-bottom: 24px;
     display: block;
+    max-height: inherit;
 }
 
 .feature__screenshot-default {
     width: 100%;
+    object-fit: contain;
+    max-height: inherit;
 }
 
 .feature__description {
@@ -445,7 +448,7 @@ body {
 summary::-webkit-details-marker {
     display: none;
   }
-  
+
 .faq-accordion {
     background-color: #E3F1FF;
     border-radius: 8px;
@@ -699,4 +702,3 @@ summary::-webkit-details-marker {
     width: 20px;
     height: 20px;
 }
-
