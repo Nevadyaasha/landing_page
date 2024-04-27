@@ -6,7 +6,7 @@ button:hover {
     cursor: pointer;
 }
 
-summary.faq-accordion__question:hover {
+.faq-accordion__question:hover {
     cursor: pointer;
 }
 
@@ -97,13 +97,6 @@ summary.faq-accordion__question:hover {
 
     .cta {
         background-image: url(images/gradient_cta_desktop.png);
-        background-repeat: no-repeat;
-        background-size: 150%;
-        border-radius: 16px;
-        margin: 0 16px 80px 16px;
-        padding: 56px 32px;
-        display: flex;
-        flex-direction: column;
     }
 
     .cta_actions {
@@ -220,6 +213,10 @@ summary.faq-accordion__question:hover {
         margin-bottom: 0;
     }
 
+    .feature {
+                margin-bottom: 80px;
+    }
+
     .feature__screenshot {
         margin-bottom: 60px;
 
@@ -306,7 +303,6 @@ summary.faq-accordion__question:hover {
         margin: 0 auto 56px auto;
         max-width: 628px;
     }
-
 
 }
 
