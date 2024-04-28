@@ -13,6 +13,7 @@
     border-radius: 4px;
     padding-top: 16px;
     padding-bottom: 16px;
+    background-color: #FFFFFF;
 }
 
 .link {
@@ -48,11 +49,19 @@ body {
     align-items: center;
 }
 
-
 .page-header__logo {
     margin-right: auto;
     height: 40px;
     width: 40px;
+}
+
+.page-header__navigation {}
+
+.page-header__link {
+    display: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #36485C;
 }
 
 .page-header__avatar {
@@ -91,27 +100,31 @@ body {
 #menuid:checked ~ .menu {
     display: block;
 }
-.menu__content { 
+
+.menu__content {
     padding: 16px 20px 38px 20px;
     width: 100%;
     box-sizing: border-box;
     background-color: #ffffff;
 }
+
 .menu__icons {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
 }
+
 .menu__logo {}
+
 .menu__close {
     background: transparent;
 }
-.menu__navigation {
 
-}
+.menu__navigation {}
+
 .menu__link {
-   color: #36485C;
-   margin-bottom: 16px;
+    color: #36485C;
+    margin-bottom: 16px;
 }
 
 .menu__link:nth-child(1) {
@@ -125,8 +138,11 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 32.5px;
-    background-size: 100% 67%;
+    background-size: 100% 60%;
     margin-bottom: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero__title {
@@ -146,6 +162,7 @@ body {
     display: flex;
     justify-content: center;
     column-gap: 24px;
+    margin-bottom: 24px;
 }
 
 .button_violet {
@@ -161,17 +178,20 @@ body {
 
 .hero__screenshot {
     position: relative;
-    right: 12px;
-    top: 8px;
+    right: 3%;
+}
+
+.hero__screenshot_default {
     width: 100%;
 }
 
-.hero__trusted {
+
+
+.hero__trusted-description {
     font-size: 1rem;
     font-weight: 400;
     color: #ffffff;
     margin-bottom: 20px;
-    display: block;
     text-align: center;
     margin-top: 0;
 }
@@ -188,15 +208,15 @@ body {
     margin: 0 20px;
 }
 
-.sales-monitoring {
+.feature {
     margin-bottom: 56px;
 }
 
-.sales-monitoring__pretitle {
+.feature__pretitle_blue {
     color: #0085FF;
 }
 
-.sales-monitoring__title {
+.feature__title {
     font-size: 24px;
     color: #172026;
     font-weight: 500;
@@ -205,19 +225,24 @@ body {
     margin-top: 0;
 }
 
-.sales-monitoring__screenshot {
-    width: 100%;
-    margin-top: 0;
+.feature__screenshot {
     margin-bottom: 24px;
+    max-height: inherit;
 }
 
-.sales-monitoring__description {
+.feature__screenshot-default {
+    width: 100%;
+    object-fit: contain;
+    max-height: inherit;
+}
+
+.feature__description {
     text-align: start;
     margin-top: 0;
     margin-bottom: 24px;
 }
 
-.sales-monitoring__advantages {
+.feature__advantages {
     margin-top: 0;
     margin-bottom: 24px;
 }
@@ -244,84 +269,30 @@ body {
     left: 0;
 }
 
-.sales-monitoring__learn-more {
+.feature__learn-more_blue {
     color: #0085FF;
 }
 
-.customer-support {
-    margin-bottom: 56px;
-}
-
-.customer-support__pretitle {
+.feature__pretitle_green {
     color: #00A424;
 }
 
-.customer-support__title {
-    font-size: 24px;
-    color: #172026;
-    font-weight: 500;
-    text-align: start;
-    margin-bottom: 24px;
-    margin-top: 0;
-}
-
-.customer-support__screenshot {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.customer-support__description {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.customer-support__advantages {
-    margin-top: 0;
-    margin-top: 24px;
-}
-
-.customer-support__learn-more {
+.feature__learn-more_green {
     color: #00A424;
 }
 
-.growth-monitoring {
-    margin-bottom: 56px;
-}
-
-.growth-monitoring__pretitle {
+.feature__pretitle_pink {
     color: #EB2891;
 }
 
-.growth-monitoring__tittle {
-    font-size: 24px;
-    color: #172026;
-    font-weight: 500;
-    text-align: start;
-    margin-bottom: 24px;
-    margin-top: 0;
-}
-
-.growth-monitoring__screenshot {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 24px;
-}
-
-.growth-monitoring__description {
-    text-align: start;
-    margin-top: 0;
-    margin-bottom: 40px;
-}
-
-.growth-monitoring__learn-more {
+.feature__learn-more_pink {
     color: #EB2891;
 }
 
-.growth-monitoring__scenarios {
+.feature__scenarios {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
     justify-items: start;
     gap: 12px 24px;
     margin-bottom: 24px;
@@ -360,15 +331,19 @@ body {
     text-align: center;
     margin: 0 20px 32px 20px;
 }
-
+.testimonials__reviews-viewport {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
 .testimonials__examples {
     width: 1200px;
     height: 372px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
     gap: 20px;
+    flex-shrink: 0;
 }
 
 .testimonials__example {
@@ -378,6 +353,9 @@ body {
     padding: 16px 16px 0 16px;
 }
 
+.testimonials__example:nth-child(6n + 1) {
+    margin-inline-start: 70px;
+  }
 .review {
     display: flex;
     flex-direction: row;
@@ -430,23 +408,6 @@ body {
     -webkit-line-clamp: 3;
 }
 
-.testimonials__example:nth-child(1),
-.testimonials__example:nth-child(2),
-.testimonials__example:nth-child(3),
-.testimonials__example:nth-child(7),
-.testimonials__example:nth-child(8),
-.testimonials__example:nth-child(9) {
-    position: relative;
-    right: 310px;
-}
-
-.testimonials__example:nth-child(4),
-.testimonials__example:nth-child(5),
-.testimonials__example:nth-child(6) {
-    position: relative;
-    right: 386px;
-}
-
 .faq {
     margin: 0 20px 48px 20px;
 }
@@ -478,10 +439,13 @@ body {
     margin-bottom: 16px;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+  }
+
 .faq-accordion {
     background-color: #E3F1FF;
     border-radius: 8px;
-
 }
 
 .faq-accordion__question {
@@ -495,6 +459,7 @@ body {
 
 .faq-accordion__question::after {
     content: url(images/plus.svg);
+    margin-left: auto;
 }
 
 .faq-accordion[open] .faq-accordion__question::after {
@@ -525,6 +490,10 @@ body {
     text-align: center;
     margin-top: 0;
     margin-bottom: 48px;
+}
+
+.tariff__description-more {
+ color: #36485C;
 }
 
 .tariff {
@@ -627,12 +596,17 @@ body {
     margin-bottom: 40px;
 }
 
+.cta_actions {
+    margin: 0 auto;
+}
+
 .cta__go-trial {
     color: #EB2891;
     font-size: 18px;
     font-weight: 500;
     padding: 16px 32px;
     margin-bottom: 24px;
+    background-color: #FFFFFF;
 }
 
 .cta__contact {
@@ -660,6 +634,10 @@ body {
     color: #36485C;
 }
 
+.footer-navigation__links-desktop {
+    display: none;
+}
+
 .nav-accordion {
     margin-bottom: 32px;
 }
@@ -680,11 +658,12 @@ body {
 
 }
 
-.nav-accordion__list-item {
+.nav-accordion__link  {
     color: #36485C;
     font-size: 1rem;
     font-weight: 500;
     margin-bottom: 32px;
+
 }
 
 .nav-accordion__label::after {
@@ -716,8 +695,4 @@ body {
 .footer__logo {
     width: 20px;
     height: 20px;
-}
-
-.list__item .link {
-color:#36485C;
 }
