@@ -46,7 +46,6 @@ body {
 .page-header {
     margin: 16px 20px;
     display: flex;
-    flex-grow: 1;
     align-items: center;
 }
 
@@ -228,7 +227,6 @@ body {
 
 .feature__screenshot {
     margin-bottom: 24px;
-    display: block;
     max-height: inherit;
 }
 
@@ -283,10 +281,6 @@ body {
     color: #00A424;
 }
 
-.feature {
-    margin-bottom: 56px;
-}
-
 .feature__pretitle_pink {
     color: #EB2891;
 }
@@ -337,7 +331,7 @@ body {
     text-align: center;
     margin: 0 20px 32px 20px;
 }
-.testimonials_reviews-viewport {
+.testimonials__reviews-viewport {
     overflow: hidden;
     display: flex;
     justify-content: center;
