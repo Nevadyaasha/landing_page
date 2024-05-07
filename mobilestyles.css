@@ -12,8 +12,8 @@
     font-size: 1rem;
     border: none;
     border-radius: 4px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    /*! padding-top: 16px; */
+    /*! padding-bottom: 16px; */
     background-color: #FFFFFF;
     font-family: "Inter", sans-serif;
 }
@@ -30,7 +30,7 @@
 
 .link__arrow {
     margin-left: 12px;
-    width: 26px;
+    width: 27px;
     height: 26px;
 }
 
@@ -40,6 +40,29 @@
     text-align: start;
     margin-bottom: 14px;
     margin-top: 0;
+}
+
+.list {
+    list-style-type: none;
+    position: relative;
+    padding-left: 40px;
+}
+
+.list__item {
+    color: #36485C;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.list__item::before {
+    content: url(images/checkmark.svg);
+    position: absolute;
+    left: 0.2rem;
 }
 
 body {
@@ -176,7 +199,7 @@ body {
     margin-bottom: 8px;
 }
 
-.button_violet {
+.hero__go-trial {
     background-color: #4328EB;
     color: #ffffff;
     padding-left: 32px;
@@ -274,29 +297,6 @@ body {
     margin-bottom: 32px;
 }
 
-.list {
-    list-style-type: none;
-    position: relative;
-    padding-left: 40px;
-}
-
-.list__item {
-    color: #36485C;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5rem;
-}
-
-.list__item:not(:last-child) {
-    margin-bottom: 12px;
-}
-
-.list__item::before {
-    content: url(images/checkmark.svg);
-    position: absolute;
-    left: 0.2rem;
-}
-
 .feature__learn-more_blue {
     color: #0085FF;
 }
@@ -350,7 +350,7 @@ margin-bottom: 64px;
     background: #F4F8FA;
     padding: 51px 0 48px 0px;
     overflow: hidden;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
 }
 
 .testimonials__title {
@@ -446,7 +446,7 @@ margin-bottom: 64px;
 }
 
 .faq {
-    margin: 0 20px 48px 20px;
+    margin: 0 20px 99px 20px;
 }
 
 .faq__pretitle {
@@ -454,7 +454,7 @@ margin-bottom: 64px;
     font-size: 14px;
     font-weight: 500;
     text-align: start;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
     margin-top: 0;
 }
 
@@ -463,12 +463,14 @@ margin-bottom: 64px;
     color: #172026;
     font-weight: 500;
     text-align: start;
-    margin-bottom: 24px;
+    margin-bottom: 2px;
     margin-top: 0;
+    line-height: 2.25rem;
 }
 
 .faq__description {
     text-align: start;
+    margin-bottom: 23.5px;
 }
 
 .faq__example {
@@ -492,15 +494,19 @@ summary::-webkit-details-marker {
     font-weight: 500;
     text-align: start;
     font-size: 1rem;
+    line-height: 1.5rem;
+    /*! margin-bottom: 0px; */
 }
 
 .faq-accordion__question::after {
     content: url(images/plus.svg);
-    margin-left: auto;
+    margin: auto 0 auto auto;
+    line-height: 1rem;
 }
 
 .faq-accordion[open] .faq-accordion__question::after {
     content: url(images/Minus.svg);
+    margin-top: 12px;
 }
 
 .faq-accordion__answer {
@@ -508,6 +514,9 @@ summary::-webkit-details-marker {
     font-weight: 400;
     color: #36485C;
     text-align: start;
+    line-height: 1.5rem;
+    margin-top: 8px;
+    margin-bottom: 0px;
 }
 
 .pricing {
@@ -518,7 +527,7 @@ summary::-webkit-details-marker {
     color: #172026;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 19.5px;
     margin-top: 0;
     font-weight: 500;
 }
@@ -526,17 +535,38 @@ summary::-webkit-details-marker {
 .pricing__description {
     text-align: center;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
+}
+
+.tariff__description {
+    margin-top: 0;
+    margin-bottom: 21px;
 }
 
 .tariff__description-more {
  color: #36485C;
+ line-height: 1.5;
 }
 
 .tariff {
     border-radius: 8px;
     margin-bottom: 24px;
-    padding: 24px;
+    padding: 11px 24px 24px 24px;
+}
+
+.tariff__features {
+    padding-left: 32px;
+    margin-bottom: 17.5px;
+}
+
+.tariff__feature {
+    line-height: 1.25rem;
+}
+
+.tariff__feature::before {
+    left: 0px;
+    content: url(images/checkmark_small.svg);
+    margin-top: 1.5px;
 }
 
 .tariff_trial,
@@ -553,8 +583,7 @@ summary::-webkit-details-marker {
     color: #4328EB;
     font-weight: 500;
     text-align: start;
-    margin-bottom: 16px;
-    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 .tariff__summ {
@@ -566,7 +595,17 @@ summary::-webkit-details-marker {
 .tariff__price {
     color: #172026;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.tariff__description-more_bottom-spacing {
+margin-bottom: 16px;
+}
+
+.tariff__price_bottom-spacing {
+    margin-bottom: 20px;
 }
 
 .tariff_business .tariff__summ {
@@ -577,6 +616,7 @@ summary::-webkit-details-marker {
     color: #5F7896;
     font-weight: 500;
     font-size: 24px;
+    margin-left: 2px;
 }
 
 .tariff_business .tariff__period,
@@ -602,7 +642,7 @@ summary::-webkit-details-marker {
     color: #4328EB;
     font-weight: 500;
     font-size: 1rem;
-    padding: 14px 30px;
+    padding: 16.5px 30px 16px 30px;
     background-color: #FFFFFF;
     box-sizing: border-box;
     width: 100%;
@@ -613,24 +653,25 @@ summary::-webkit-details-marker {
     background-repeat: no-repeat;
     background-size: 150%;
     border-radius: 16px;
-    margin: 0 16px 80px 16px;
-    padding: 56px 32px;
+    margin: 0px 20px 73px 20px;
+    padding: 30px 32px 55px 32px;
     display: flex;
     flex-direction: column;
 }
 
 .cta__title {
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+    line-height: 2.5rem;
 }
 
 .cta__description {
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
 }
 
 .cta_actions {
@@ -639,36 +680,44 @@ summary::-webkit-details-marker {
 
 .cta__go-trial {
     color: #EB2891;
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 500;
-    padding: 16px 32px;
-    margin-bottom: 24px;
+    padding: 17.5px 32px 17.5px 32px;
+    margin-bottom: 32.5px;
     background-color: #FFFFFF;
+    letter-spacing: 0.008em;
 }
 
 .cta__contact {
     color: #FFFFFF;
     margin: 0 auto;
+    letter-spacing: 0.01em;
+    font-size: 1.1rem;
 }
 
 .footer-navigation {
-    margin: 0 20px 56px 20px;
+    margin: 0px 20px 52px 20px;
 }
 
 .footer-navigation__site-info {
     display: flex;
-    gap: 12px;
-    margin-bottom: 56px;
+    gap: 9px;
+    margin-bottom: 52px;
 }
 
 .footer-navigation__site-logo {
-    width: 35px;
+    /*! width: 39px; */
+    margin-left: -2px;
+    /*! height: 40px; */
+    font-size: 1.1rem;
 }
 
 .footer-navigation__site-name {
-    font-size: 17px;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #36485C;
+    letter-spacing: -0.025rem;
+    line-height: 1.25rem;
 }
 
 .footer-navigation__links-desktop {
@@ -676,7 +725,8 @@ summary::-webkit-details-marker {
 }
 
 .nav-accordion {
-    margin-bottom: 32px;
+    margin-bottom: 28px;
+    letter-spacing: -0.01rem;
 }
 
 .nav-accordion__label {
@@ -686,6 +736,7 @@ summary::-webkit-details-marker {
     text-align: start;
     font-size: 1rem;
     justify-content: space-between;
+    /*! margin-bottom: 1px; */
 }
 
 .nav-accordion__list {
@@ -705,6 +756,8 @@ summary::-webkit-details-marker {
 
 .nav-accordion__label::after {
     content: url(images/chevron_down.svg);
+    position: relative;
+    top: -2px;
 }
 
 .nav-accordion[open] .nav-accordion__label::after {
@@ -720,13 +773,14 @@ summary::-webkit-details-marker {
     font-size: 14px;
     font-weight: 500;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 43px;
 }
 
 .footer__logos {
     display: flex;
     gap: 56px;
     justify-content: center;
+    margin-left: -1px;
 }
 
 .footer__logo {
