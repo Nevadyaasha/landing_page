@@ -21,6 +21,9 @@ button:hover {
     .hero__screenshot {
         right: 5%;
     }
+
+    .hero__screenshot_default {
+        width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -187,7 +190,8 @@ button:hover {
     }
 
     .hero__title {
-        font-size: 64px;
+        font-size: 4rem;
+        line-height: 4rem;
         font-weight: 600;
     }
 
@@ -293,7 +297,8 @@ button:hover {
     }
 
     .cta__title {
-        font-size: 56px;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
         max-width: 628px;
         margin: 0 auto 48px auto;
     }
