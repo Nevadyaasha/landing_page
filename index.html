@@ -90,11 +90,26 @@
     <div class="hero__trusted">
       <p class="hero__trusted-description">Trusted by these companies</p>
       <div class="hero__companies">
-        <img class="hero__company" src="images/logo_google.svg" alt="google">
-        <img class="hero__company" src="images/logo_slack.svg" alt="slack">
-        <img class="hero__company" src="images/logo_trustpilot.svg" alt="trustpilot">
-        <img class="hero__company" src="images/logo_cnn.svg" alt="cnn">
-        <img class="hero__company" src="images/logo_clutch.svg" alt="clutech">
+        <picture class="hero__company">
+          <source media="(min-width: 1024px)" srcset="images/logo_google_desktop.svg">
+          <img class="hero__company_default" src="images/logo_google.svg" alt="google">
+        </picture>
+        <picture class="hero__company">
+          <source media="(min-width: 1024px)" srcset="images/logo_slack_desktop.svg">
+          <img class="hero__company_default" src="images/logo_slack.svg" alt="slack">
+        </picture>
+        <picture class="hero__company">
+          <source media="(min-width: 1024px)" srcset="images/logo_trustpilot_desktop.svg">
+          <img class="hero__company_default" src="images/logo_trustpilot.svg" alt="slack">
+        </picture>
+        <picture class="hero__company">
+          <source media="(min-width: 1024px)" srcset="images/logo_cnn_desktop.svg">
+          <img class="hero__company_default" src="images/logo_cnn.svg" alt="slack">
+        </picture>
+        <picture class="hero__company">
+          <source media="(min-width: 1024px)" srcset="images/logo_clutch_desktop.svg">
+          <img class="hero__company_default" src="images/logo_clutch.svg" alt="slack">
+        </picture>
       </div>
     </div>
   </section>

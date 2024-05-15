@@ -163,7 +163,7 @@ body {
     background-image: url(images/gradient.png);
     background-position: bottom;
     background-repeat: no-repeat;
-    padding-bottom: 32px;
+    padding-bottom: 27px;
     background-size: 100% 60%;
     margin-bottom: 58.5px;
     display: flex;
@@ -212,7 +212,7 @@ body {
 .hero__screenshot {
     position: relative;
     right: 3.8%;
-    margin-bottom: -20px;
+    margin-bottom: -22px;
 }
 
 .hero__screenshot_default {}

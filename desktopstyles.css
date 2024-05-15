@@ -19,11 +19,12 @@ button:hover {
 
 @media (min-width: 500px) {
     .hero__screenshot {
-        right: 5%;
+        right: 6%;
     }
 
     .hero__screenshot_default {
         width: 100%;
+    }
 }
 
 @media (min-width: 768px) {
@@ -172,50 +173,100 @@ button:hover {
     }
 
     .description {
-        font-size: 18px;
+        font-size: 1.1rem;
     }
 
     .page-header {
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 56px;
+        margin-right: 42px;
+        padding: 21.5px 20px 16px 21px;
+        margin-bottom: 49px;
     }
 
     .page-header__logo {
-        margin-right: 74px;
+        margin-right: 72px;
+    }
+
+    .page-header__avatar {
+        margin-right: 12px;
+    }
+
+    .page-header__link:nth-child(5) {
+        margin-right: 57px;
+    }
+    
+    .hero {
+        padding-bottom: 75.5px;
+        margin-bottom: 122px;
     }
 
     .hero__title,
     .hero__description {
         max-width: 846px;
+        margin-bottom: 24.5px;
     }
 
     .hero__title {
         font-size: 4rem;
-        line-height: 4rem;
+        line-height: 4.5rem;
         font-weight: 600;
+        letter-spacing: -0.0001rem;
     }
-
-    .hero__go-trial,
+    
+    .hero__description {
+        line-height: 1.75rem;
+        letter-spacing: 0.0115rem;
+    }
+    
+    
+    .hero__go-trial {
+        padding-right: 31px
+    }
+    
+    
     .link__arrow,
     .cta__go-trial,
     .cta__contact {
-        font-size: 18px;
+        font-size: 1.1rem;
+        letter-spacing: 0.01rem;
     }
 
     .hero__actions {
-        gap: 40px;
-        margin-bottom: 88px;
+        gap: 41px;
+        margin-bottom: -60px;
+    }
+
+    .hero__screenshot {
+        right: 6%;
+    }
+
+    .hero__view-price {
+        letter-spacing: 0.01rem;
+        font-size: 1.1rem;
     }
 
     .hero__trusted {
         display: flex;
-        gap: 72px;
+        gap: 73px;
         flex-grow: 1;
         align-items: center;
+        /*! margin-left: -0.25em; */
     }
 
     .hero__trusted-description {
         margin-bottom: 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.013rem;
+        padding-bottom: 0.1em;
+    }
+
+    .hero__screenshot {
+        margin-bottom: -117px;
+    }
+
+    .hero__companies {
+    column-gap: 95.6px;
+    margin-top: 2px;
     }
 
     .feature {
@@ -319,12 +370,16 @@ button:hover {
     }
 
     .hero__screenshot {
-        right: 6%;
+        right: 5.15%;
     }
 
     .page-header__link {
         display: inline;
-        margin-right: 56px;
+        margin-right: 56.3px;
+    }
+
+    .page-header__navigation :last-child {
+        margin-right: 18px;
     }
 
     .feature {
