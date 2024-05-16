@@ -197,7 +197,7 @@ button:hover {
     
     .hero {
         padding-bottom: 75.5px;
-        margin-bottom: 122px;
+        margin-bottom: 120px;
     }
 
     .hero__title,
@@ -385,48 +385,80 @@ button:hover {
     .feature {
         max-height: 630px;
         margin-left: 80px;
+        column-gap: 48.5px;
+        margin-bottom: 78px;
     }
 
     .feature:nth-child(2) {
         margin-bottom: 120px;
     }
 
-    .feature__pretitle {
-        font-size: 18px;
-        margin-top: 56px;
-        margin-bottom: 16px;
+    .feature_enlarged-bottom-spacing {
+
+    margin-bottom: 118px;
     }
 
+    .feature__pretitle {
+        font-size: 18px;
+        margin-top: 58px;
+        margin-bottom: 16px;
+        max-width: 40%;
+    }
+
+    .feature_left {margin-left: 69px;column-gap: 0px;}
+
+    .feature__screenshot_left {
+
+    position: relative;
+    left: 4px;
+    }
+    
     .feature__screenshot {
         margin-bottom: 0;
+        max-width: 47.5%;
     }
 
     .feature__title {
         font-size: 42px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
+        line-height: 3.6rem;
+        max-width: 40%;
     }
 
     .feature__description {
         font-size: 18px;
-        margin-bottom: 32px;
+        margin-bottom: 27px;
+        line-height: 1.75rem;
+        max-width: 40%;
     }
-
-
+    
+    .feature__advantage {
+        line-height: 2rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.01rem;
+    }
+    
     .feature__advantages {
-        margin-bottom: 32px;
+        margin-bottom: 52.5px;
+        max-width: 40%;
     }
 
     .feature__learn-more {
         font-size: 18px;
+        max-width: 40%;
     }
 
     .feature__scenarios {
-        margin-bottom: 32px;
+        margin-bottom: 47px;
 
+        margin-top: 20px;
+        column-gap: 0px;
+        max-width: 44.5%;
     }
 
     .scenarios__condition {
-        font-size: 32px;
+        font-size: 2.1rem;
+        letter-spacing: -0.1rem;
     }
 
     .scenarios__decision {
@@ -436,6 +468,9 @@ button:hover {
     .link__arrow {
         width: 28px;
         height: 28px;
+    }
+    
+    .testimonials {
     }
 
     .testimonials__examples {
