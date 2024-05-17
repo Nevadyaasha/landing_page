@@ -471,16 +471,27 @@ button:hover {
     }
     
     .testimonials {
+    padding-top: 100px;
+    margin-bottom: 120px;
     }
 
     .testimonials__examples {
         width: 1820px;
+        column-gap: 24px;
+        row-gap: 24px;
     }
 
     .testimonials__example {
-        width: 519px;
+        width: 470px;
         padding: 24px;
     }
+    .testimonials__example:nth-child(6n+1) {
+        margin-inline-start: 114px;
+    }
+    
+  .testimonials__example:nth-child(4) {
+    margin-inline-start: 9px;
+  }
 
     .review__avatar {
         width: 64px;
@@ -488,11 +499,11 @@ button:hover {
     }
 
     .review__name {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .review__job-title {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .review__source {
@@ -500,16 +511,21 @@ button:hover {
     }
 
     .review__content {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 0;
+        height: 86px;
+        line-height: 1.75rem;
+        margin-top: 16px;
     }
 
     .testimonials__title {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 
     .testimonials__description {
-        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        max-width: 47%;
     }
 
     .footer-navigation__list {
