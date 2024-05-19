@@ -169,11 +169,11 @@ button:hover {
 @media (min-width: 1024px) {
 
     .title {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .description {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
     }
 
     .page-header {
@@ -298,7 +298,7 @@ button:hover {
     }
 
     .faq__examples {
-        width: 56.2%;
+        width: 58.2%;
     }
 
     .pricing__description {
@@ -366,7 +366,7 @@ button:hover {
 @media (min-width: 1440px) {
 
     .title {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 
     .hero__screenshot {
@@ -527,7 +527,50 @@ button:hover {
         line-height: 1.75rem;
         max-width: 47%;
     }
+    
+    .faq {
+        margin-bottom: 7.4%;
+    }
+    
+    .faq__pretitle {
+        font-size: 1rem;
+        margin-top: 34.5px;
+        margin-bottom: 18.5px;
+    }
+    
+    .faq__title {
+        
+    line-height: 3.6rem;
+    max-width: 80%;
+    }
+    
+    .faq__description {
+        
+    max-width: 85%;
+    line-height: 1.75rem;
+    }
+      .faq__examples {
+    width: 57.5%;
+    }
+    .faq-accordion {padding: 29px;}
 
+    .faq-accordion__question {font-size: 1.125rem;padding-right: 20px;}
+
+    .faq-accordion__answer {font-size: 1.125rem;line-height: 1.75rem;margin-top: 3px;max-width: 98%;}
+    
+    .faq__example {padding: 24px;/*! width: 95.8%; */margin-bottom: 15px;}
+    
+    .faq-accordion[open] .faq-accordion__question::after {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-bottom: 12px;
+    }
+    .faq-accordion__question::after {
+        
+        margin: 0 0 auto auto;
+        position: relative;
+        left: 20px;
+    }
     .footer-navigation__list {
         padding: 0;
         width: 193px;
