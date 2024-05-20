@@ -302,11 +302,11 @@ button:hover {
     }
 
     .pricing__description {
-        margin-bottom: 64px;
+        margin-bottom: 65px;
     }
 
     .pricing {
-        margin: 0 5.5% 120px 5.5%;
+        margin: 0 5.5% 95.5px 5.5%;
     }
 
     .tariffs {
@@ -331,7 +331,8 @@ button:hover {
     }
 
     .tariff__price {
-        margin-bottom: 32px;
+        margin-bottom: 31px;
+        font-size: 2rem;
     }
 
     .tariff__summ,
@@ -571,6 +572,17 @@ button:hover {
         position: relative;
         left: 20px;
     }
+        
+    .tariff {padding-top: 8.2px;}
+    .tariff__title {margin-bottom: 21px;}
+    .tariff__description {margin-bottom: 36px;}
+    .tariff__price {margin-bottom: 14px;}
+    .tariff__features {margin-bottom: 29px;}
+    .tariff__feature {line-height: 1.75rem;}
+    .tariff__description-more_enlarged-gap {margin-bottom: 2px;}
+
+    .pricing__title {margin-bottom: 23px;}
+    
     .footer-navigation__list {
         padding: 0;
         width: 193px;
