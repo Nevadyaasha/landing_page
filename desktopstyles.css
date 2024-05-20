@@ -585,8 +585,8 @@ button:hover {
 
     .pricing__title {margin-bottom: 23px;}
     
-    .cta {padding-top: 92px;padding-bottom: 88px;margin-bottom: 112px;}
-    .cta__title {margin-bottom: 54px;}
+    .cta {padding-top: 90px;padding-bottom: 88px;margin-bottom: 112px;}
+    .cta__title {margin-bottom: 50px;line-height: 4rem;}
     .footer-navigation__list {
         padding: 0;
         width: 193px;
