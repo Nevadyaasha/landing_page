@@ -121,7 +121,7 @@ button:hover {
     }
 
     .footer-navigation {
-        margin: 0 5.5% 104px;
+        margin: 0px 5.5% 90px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -162,6 +162,8 @@ button:hover {
     .footer__copyright {
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 1rem;
+        margin-left: 1px;
     }
 
 }
@@ -588,7 +590,11 @@ button:hover {
     .footer-navigation__list {
         padding: 0;
         width: 193px;
+        margin-left: 24.5px;
+        margin-top: 8px;
     }
+    
+    .footer-navigation__list-item {line-height: 1.5rem;}
 }
 
 @media (min-width: 1540px) {
