@@ -350,14 +350,14 @@ button:hover {
 
     .cta__title {
         font-size: 3.5rem;
-        line-height: 3.5rem;
+        line-height: 3.8rem;
         max-width: 628px;
         margin: 0 auto 48px auto;
     }
 
     .cta__description {
-        font-size: 18px;
-        margin: 0 auto 56px auto;
+        font-size: 1.125rem;
+        margin: 0px auto 57px auto;
         max-width: 628px;
     }
 
@@ -583,6 +583,8 @@ button:hover {
 
     .pricing__title {margin-bottom: 23px;}
     
+    .cta {padding-top: 92px;padding-bottom: 88px;margin-bottom: 112px;}
+    .cta__title {margin-bottom: 54px;}
     .footer-navigation__list {
         padding: 0;
         width: 193px;
