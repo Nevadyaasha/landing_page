@@ -10,22 +10,6 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 350px) {
-    .hero__go-trial {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-}
-
-@media (min-width: 500px) {
-    .hero__screenshot {
-        right: 5%;
-    }
-
-    .hero__screenshot_default {
-        width: 100%;
-}
-
 @media (min-width: 768px) {
     .burger-menu {
         display: none;
@@ -120,7 +104,7 @@ button:hover {
     }
 
     .footer-navigation {
-        margin: 0 5.5% 104px;
+        margin: 0px 5.5% 90px;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
@@ -161,6 +145,8 @@ button:hover {
     .footer__copyright {
         margin-top: 0;
         margin-bottom: 0;
+        font-size: 1rem;
+        margin-left: 1px;
     }
 
 }
@@ -168,54 +154,104 @@ button:hover {
 @media (min-width: 1024px) {
 
     .title {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .description {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .page-header {
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 56px;
+        margin-right: 42px;
+        padding: 21.5px 20px 16px 21px;
+        margin-bottom: 49px;
     }
 
     .page-header__logo {
-        margin-right: 74px;
+        margin-right: 72px;
+    }
+
+    .page-header__avatar {
+        margin-right: 12px;
+    }
+
+    .page-header__link:nth-child(5) {
+        margin-right: 57px;
+    }
+
+    .hero {
+        padding-bottom: 75.5px;
+        margin-bottom: 120px;
     }
 
     .hero__title,
     .hero__description {
         max-width: 846px;
+        margin-bottom: 24.5px;
     }
 
     .hero__title {
         font-size: 4rem;
-        line-height: 4rem;
+        line-height: 4.5rem;
         font-weight: 600;
+        letter-spacing: -0.0001rem;
     }
 
-    .hero__go-trial,
+    .hero__description {
+        line-height: 1.75rem;
+        letter-spacing: 0.0115rem;
+    }
+
+
+    .hero__go-trial {
+        padding-right: 31px
+    }
+
+
     .link__arrow,
     .cta__go-trial,
     .cta__contact {
-        font-size: 18px;
+        font-size: 1.1rem;
+        letter-spacing: 0.01rem;
     }
 
     .hero__actions {
-        gap: 40px;
-        margin-bottom: 88px;
+        gap: 41px;
+        margin-bottom: -60px;
+    }
+
+    .hero__screenshot {
+        right: 6%;
+    }
+
+    .hero__view-price {
+        letter-spacing: 0.01rem;
+        font-size: 1.1rem;
     }
 
     .hero__trusted {
         display: flex;
-        gap: 72px;
+        gap: 73px;
         flex-grow: 1;
         align-items: center;
+        /*! margin-left: -0.25em; */
     }
 
     .hero__trusted-description {
         margin-bottom: 0;
+        font-size: 1.1rem;
+        letter-spacing: 0.013rem;
+        padding-bottom: 0.1em;
+    }
+
+    .hero__screenshot {
+        margin-bottom: -117px;
+    }
+
+    .hero__companies {
+        column-gap: 95.6px;
+        margin-top: 2px;
     }
 
     .feature {
@@ -247,15 +283,15 @@ button:hover {
     }
 
     .faq__examples {
-        width: 56.2%;
+        width: 58.2%;
     }
 
     .pricing__description {
-        margin-bottom: 64px;
+        margin-bottom: 65px;
     }
 
     .pricing {
-        margin: 0 5.5% 120px 5.5%;
+        margin: 0 5.5% 95.5px 5.5%;
     }
 
     .tariffs {
@@ -280,7 +316,8 @@ button:hover {
     }
 
     .tariff__price {
-        margin-bottom: 32px;
+        margin-bottom: 31px;
+        font-size: 2rem;
     }
 
     .tariff__summ,
@@ -298,14 +335,14 @@ button:hover {
 
     .cta__title {
         font-size: 3.5rem;
-        line-height: 3.5rem;
+        line-height: 3.8rem;
         max-width: 628px;
         margin: 0 auto 48px auto;
     }
 
     .cta__description {
-        font-size: 18px;
-        margin: 0 auto 56px auto;
+        font-size: 1.125rem;
+        margin: 0px auto 57px auto;
         max-width: 628px;
     }
 
@@ -315,63 +352,102 @@ button:hover {
 @media (min-width: 1440px) {
 
     .title {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 
     .hero__screenshot {
-        right: 6%;
+        right: 5.15%;
     }
 
     .page-header__link {
         display: inline;
-        margin-right: 56px;
+        margin-right: 56.3px;
+    }
+
+    .page-header__navigation :last-child {
+        margin-right: 18px;
     }
 
     .feature {
         max-height: 630px;
         margin-left: 80px;
+        column-gap: 48.5px;
+        margin-bottom: 78px;
     }
 
     .feature:nth-child(2) {
         margin-bottom: 120px;
     }
 
+    .feature_enlarged-bottom-spacing {
+
+        margin-bottom: 118px;
+    }
+
     .feature__pretitle {
         font-size: 18px;
-        margin-top: 56px;
+        margin-top: 58px;
         margin-bottom: 16px;
+        max-width: 40%;
+    }
+
+    .feature_left {
+        margin-left: 69px;
+        column-gap: 0px;
+    }
+
+    .feature__screenshot_left {
+
+        position: relative;
+        left: 4px;
     }
 
     .feature__screenshot {
         margin-bottom: 0;
+        max-width: 47.5%;
     }
 
     .feature__title {
         font-size: 42px;
-        margin-bottom: 16px;
+        margin-bottom: 18px;
+        line-height: 3.6rem;
+        max-width: 40%;
     }
 
     .feature__description {
         font-size: 18px;
-        margin-bottom: 32px;
+        margin-bottom: 27px;
+        line-height: 1.75rem;
+        max-width: 40%;
     }
 
+    .feature__advantage {
+        line-height: 2rem;
+        font-size: 1.1rem;
+        letter-spacing: 0.01rem;
+    }
 
     .feature__advantages {
-        margin-bottom: 32px;
+        margin-bottom: 52.5px;
+        max-width: 40%;
     }
 
     .feature__learn-more {
         font-size: 18px;
+        max-width: 40%;
     }
 
     .feature__scenarios {
-        margin-bottom: 32px;
+        margin-bottom: 47px;
 
+        margin-top: 20px;
+        column-gap: 0px;
+        max-width: 44.5%;
     }
 
     .scenarios__condition {
-        font-size: 32px;
+        font-size: 2.1rem;
+        letter-spacing: -0.1rem;
     }
 
     .scenarios__decision {
@@ -383,13 +459,28 @@ button:hover {
         height: 28px;
     }
 
+    .testimonials {
+        padding-top: 100px;
+        margin-bottom: 120px;
+    }
+
     .testimonials__examples {
         width: 1820px;
+        column-gap: 24px;
+        row-gap: 24px;
     }
 
     .testimonials__example {
-        width: 519px;
+        width: 470px;
         padding: 24px;
+    }
+
+    .testimonials__example:nth-child(6n+1) {
+        margin-inline-start: 114px;
+    }
+
+    .testimonials__example:nth-child(4) {
+        margin-inline-start: 9px;
     }
 
     .review__avatar {
@@ -398,11 +489,11 @@ button:hover {
     }
 
     .review__name {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .review__job-title {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .review__source {
@@ -410,21 +501,135 @@ button:hover {
     }
 
     .review__content {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 0;
+        height: 86px;
+        line-height: 1.75rem;
+        margin-top: 16px;
     }
 
     .testimonials__title {
-        font-size: 42px;
+        font-size: 2.625rem;
     }
 
     .testimonials__description {
-        font-size: 18px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        max-width: 47%;
+    }
+
+    .faq {
+        margin-bottom: 7.4%;
+    }
+
+    .faq__pretitle {
+        font-size: 1rem;
+        margin-top: 34.5px;
+        margin-bottom: 18.5px;
+    }
+
+    .faq__title {
+
+        line-height: 3.6rem;
+        max-width: 80%;
+    }
+
+    .faq__description {
+
+        max-width: 85%;
+        line-height: 1.75rem;
+    }
+
+    .faq__examples {
+        width: 57.5%;
+    }
+
+    .faq-accordion {
+        padding: 29px;
+    }
+
+    .faq-accordion__question {
+        font-size: 1.125rem;
+        padding-right: 20px;
+    }
+
+    .faq-accordion__answer {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        margin-top: 3px;
+        max-width: 98%;
+    }
+
+    .faq__example {
+        padding: 24px;
+        margin-bottom: 15px;
+    }
+
+    .faq-accordion[open] .faq-accordion__question::after {
+        margin-top: 0px;
+        margin-left: auto;
+        margin-bottom: 12px;
+    }
+
+    .faq-accordion__question::after {
+
+        margin: 0 0 auto auto;
+        position: relative;
+        left: 20px;
+    }
+
+    .tariff {
+        padding-top: 8.2px;
+    }
+
+    .tariff__title {
+        margin-bottom: 21px;
+    }
+
+    .tariff__description {
+        margin-bottom: 36px;
+    }
+
+    .tariff__price {
+        margin-bottom: 14px;
+    }
+
+    .tariff__features {
+        margin-bottom: 29px;
+    }
+
+    .tariff__feature {
+        line-height: 1.75rem;
+    }
+
+    .tariff__description-more_enlarged-gap {
+        margin-bottom: 2px;
+    }
+
+    .pricing__title {
+        margin-bottom: 23px;
+    }
+
+    .cta {
+        padding-top: 90px;
+        padding-bottom: 88px;
+        margin-bottom: 112px;
+    }
+
+    .cta__title {
+        margin-bottom: 50px;
+        line-height: 4rem;
     }
 
     .footer-navigation__list {
         padding: 0;
         width: 193px;
+        margin-left: 24.5px;
+        margin-top: 8px;
+    }
+
+    .footer-navigation__list-item {
+        line-height: 1.5rem;
     }
 }
 
