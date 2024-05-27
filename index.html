@@ -83,10 +83,12 @@
       </a>
     </div>
     <picture class="hero__screenshot">
-      <source media="(min-width: 500px)"
-        srcset="images/screenshot_wm_desktop.png, images/screenshot_wm_desktop_2x.png 2x">
+      <source type="image/webp" media="(min-width: 500px)"
+      srcset="images/screenshot_wm_desktop.webp 1x, images/screenshot_wm_desktop_2x.webp 2x">
+      <source type="image/png" media="(min-width: 500px)"
+        srcset="images/screenshot_wm_desktop.png 1x, images/screenshot_wm_desktop_2x.png 2x">
       <img class="hero__screenshot_default"
-        srcset="images/screenshot_wm_mobile.png, images/screenshot_wm_mobile_2x.png 2x" alt="screenshots">
+        src="images/screenshot_wm_mobile_2x.png" alt="screenshots">
     </picture>
 
     <div class="hero__trusted">
