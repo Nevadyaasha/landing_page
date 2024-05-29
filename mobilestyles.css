@@ -177,7 +177,12 @@ body {
 .hero {
     padding-left: 20px;
     padding-right: 20px;
-    background-image: url(images/gradient_hero.png);
+    background-image:
+        image-set(
+            url("images/gradient_hero_mobile_1x.webp") type("image/webp") 1x,
+            url("images/gradient_hero_mobile_2x.webp") type("image/webp") 2x,
+            url("images/gradient_hero_mobile_1x.png") type("image/png") 1x,
+            url("images/gradient_hero_mobile_2x.png") type("image/png") 2x);
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 27px;
@@ -232,7 +237,9 @@ body {
     margin-bottom: -22px;
 }
 
-.hero__screenshot_default {}
+.hero__screenshot_default {
+    max-width: 100%;
+}
 
 
 
@@ -662,7 +669,12 @@ summary::-webkit-details-marker {
 }
 
 .cta {
-    background-image: url(images/gradient_cta_mobile.png);
+    background-image:
+    image-set(
+        url("images/gradient_cta_mobile_1x.webp") type("image/webp") 1x,
+        url("images/gradient_cta_mobile_2x.webp") type("image/webp") 2x,
+        url("images/gradient_cta_mobile_1x.png") type("image/png") 1x,
+        url("images/gradient_cta_mobile_2x.png") type("image/png") 2x);
     background-repeat: no-repeat;
     background-size: 150%;
     border-radius: 16px;

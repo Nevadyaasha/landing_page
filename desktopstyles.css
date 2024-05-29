@@ -45,6 +45,14 @@ button:hover {
         margin-right: 40px;
     }
 
+    .hero {
+        background-image: image-set(
+                url("images/gradient_hero_desktop_1x.webp") type("image/webp") 1x,
+                url("images/gradient_hero_desktop_2x.webp") type("image/webp") 2x,
+                url("images/gradient_hero_desktop_1x.png") type("image/png") 1x,
+                url("images/gradient_hero_desktop_2x.png") type("image/png") 2x);
+    }
+
     .hero__actions {
         margin-bottom: 60px;
     }
@@ -83,7 +91,11 @@ button:hover {
     }
 
     .cta {
-        background-image: url(images/gradient_cta_desktop.png);
+        background-image: image-set(
+            url("images/gradient_cta_desktop_1x.webp") type("image/webp") 1x,
+            url("images/gradient_cta_desktop_2x.webp") type("image/webp") 2x,
+            url("images/gradient_cta_desktop_1x.png") type("image/png") 1x,
+            url("images/gradient_cta_desktop_2x.png") type("image/png") 2x);  
     }
 
     .cta_actions {

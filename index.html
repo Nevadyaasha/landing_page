@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="mobilestyles.css">
   <link rel="stylesheet" href="desktopstyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
@@ -87,6 +88,8 @@
       srcset="images/screenshot_wm_desktop.webp 1x, images/screenshot_wm_desktop_2x.webp 2x">
       <source type="image/png" media="(min-width: 500px)"
         srcset="images/screenshot_wm_desktop.png 1x, images/screenshot_wm_desktop_2x.png 2x">
+        <source type="image/webp"
+        srcset="images/screenshot_wm_mobile.webp 1x, images/screenshot_wm_mobile_2x.webp 2x">
       <img class="hero__screenshot_default"
         src="images/screenshot_wm_mobile_2x.png" alt="screenshots">
     </picture>
@@ -121,7 +124,12 @@
     <p class="feature__pretitle feature__pretitle_blue  pretitle">Sales Monitoring</p>
     <h1 class="feature__title title">Simplify your sales monitoring</h1>
     <picture class="feature__screenshot">
-      <source media="(min-width: 768px)" srcset="images/sales_monitoring_d.png, images/sales_monitoring_d_2x.png 2x">
+      <source media="(min-width: 768px)" type="image/webp" 
+        srcset="images/sales_monitoring_d.webp, images/sales_monitoring_d_2x.webp 2x">
+      <source  media="(min-width: 768px)" type="image/png" 
+        srcset="images/sales_monitoring_d.png, images/sales_monitoring_d_2x.png 2x">
+      <source  type="image/webp" 
+        srcset="images/sales_monitoring_m.webp, images/sales_monitoring_m_2x.webp 2x">
       <img class="feature__screenshot-default"
         srcset="images/sales_monitoring_m.png, images/sales_monitoring_m_2x.png 2x" alt="sales monitoring example">
     </picture>
@@ -140,7 +148,12 @@
     <p class="feature__pretitle   feature__pretitle_green pretitle">Customer Support</p>
     <h1 class="feature__title  title">Get in touch with your customers</h1>
     <picture class="feature__screenshot feature__screenshot_left">
-      <source media="(min-width: 768px)" srcset="images/customer_support_d.png, images/customer_support_d_2x.png 2x">
+      <source media="(min-width: 768px)"   type="image/webp"
+        srcset="images/customer_support_d.webp, images/customer_support_d_2x.webp 2x">
+        <source media="(min-width: 768px)"  type="image/png"
+        srcset="images/customer_support_d.png, images/customer_support_d_2x.png 2x">
+        <source type="image/webp"
+        srcset="images/customer_support_m.webp, images/customer_support_m_2x.webp 2x">
       <img class="feature__screenshot-default feature__screenshot-default_left"
         srcset="images/customer_support_m.png, images/customer_support_m_2x.png 2x" alt="feature example">
     </picture>
@@ -159,7 +172,12 @@
     <p class="feature__pretitle feature__pretitle_pink pretitle">Growth Monitoring</p>
     <h1 class="feature__title title">Monitor your site’s new subscribers </h1>
     <picture class="feature__screenshot">
-      <source media="(min-width: 768px)" srcset="images/growth_monitoring_d.png, images/growth_monitoring_d_2x.png 2x">
+      <source media="(min-width: 768px)" type="image/webp"
+        srcset="images/growth_monitoring_d.webp, images/growth_monitoring_d_2x.webp 2x">
+      <source media="(min-width: 768px)" type="image/png"
+        srcset="images/growth_monitoring_d.png, images/growth_monitoring_d_2x.png 2x">
+      <source type="image/webp"
+      srcset="images/growth_monitoring_m.webp, images/growth_monitoring_m_2x.webp 2x">
       <img class="feature__screenshot-default"
         srcset="images/growth_monitoring_m.png, images/growth_monitoring_m_2x.png 2x" alt="growth monitoring example">
     </picture>
