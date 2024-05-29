@@ -239,6 +239,7 @@ body {
 
 .hero__screenshot_default {
     max-width: 100%;
+    aspect-ratio: 5 / 4;
 }
 
 

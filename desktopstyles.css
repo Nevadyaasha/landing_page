@@ -53,6 +53,10 @@ button:hover {
                 url("images/gradient_hero_desktop_2x.png") type("image/png") 2x);
     }
 
+    .hero__screenshot_default {
+        aspect-ratio: 3 / 2;
+    }
+
     .hero__actions {
         margin-bottom: 60px;
     }
